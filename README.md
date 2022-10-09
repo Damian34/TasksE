@@ -6,9 +6,9 @@ Zadania i opis
 1.A. W jakim celu używa się klas abstrakcyjnych, a w jakim interfejsów?
 
 klasa abstrakcyjna jest podobna do interfejsu, np. klasa abstrakcyjna pozwala na dodawanie metod bez implementacji(te metody musza mieć przedrostek abstract tak samo jak klasa)
-tak samo jak interfejs(oczywiście klasa abstrakcyjna moze miec zwykłe metody z implementacją, i interfejs też tylko tutaj trzeba dopisać przed metoda "default")(ps. w interfejsie metody są odrazu publiczne i abstrakcyjne).
+tak samo jak interfejs(oczywiście klasa abstrakcyjna może miec zwykłe metody z implementacją, i interfejs też tylko tutaj trzeba dopisać przed metoda "default")(ps. w interfejsie metody są odrazu publiczne i abstrakcyjne).
 podobieństw miedzy nimi jest sporo, ale jest taka różnica że,
-aby dodac abstrakcje do klasy używa sie słowa kuczowego 'extends' i tu można dodać tylko 1 klase, a dla interfejsu 'implements' i tu można dodać wiecej jak 1 interfejs.
+aby dodać abstrakcje do klasy używa sie słowa kuczowego 'extends' i tu można dodać tylko 1 klase, a dla interfejsu 'implements' i tu można dodać wiecej jak 1 interfejs.
 Jako zastosowanie weźmy np. klase abstrakcyjną (nazwijmy ją A z metodą abstrakcyjną np. getName), możemy do niej stworzyć np 2 różne klasy które z niej dziedziczą(niech sie nazywają B, C tutaj implementuje np tą metode), i teraz tak obie te klasy posiadają różną implementacjie tej metody, ale klase B można potraktować jako klase A, tak samo C, wiec mozna zrobić np. liste obiektów klasy A i wrzucić tam B, C, wtedy wywołanie metody getName dla róznych elemntów z tej listy bedzie zwracało różne wyniki co opisuje Polimorfizm. I to samo można by zrobić z intefejsami nie bede tego opisywać tylko to, że zrzutowanie klasy wykorzystujocej np 2 różne interfejsy D, E na np E spowoduje okrojenie jej dostepnych metod i to chyba tyle.
 Wiec ostatecznie mógłbym powiedzieć że klas abstrakcyjnych i intefejsu wykorzystuje sie w celu dziedziczenia i polimorfizmu.
 
@@ -16,11 +16,11 @@ Wiec ostatecznie mógłbym powiedzieć że klas abstrakcyjnych i intefejsu wykor
 
 Wiec tak w javie tablica ma z góry(przez programistę) zdefinowany rozmiar,
 natomiast w liście liniowej(tak ogólnie kiedyś robiłem taką liste w jezyku c)(w javie przykładem takiej listy jest LinkedList):
-- jeśli jest to lista jednokierunkowa to tylko wskaźnik na nastepny element.
-- jeśli dwukierunkowa to wskaźnik na następny i poprzedni element.
-Więc tak podsumowując jeśli np. byśmy chcieli dodawac nowy element do tablicy to trzeba by wykonywac szereg opercji jak zarezerwować pamieć na nową tablice o rozmiarze +1 w odniesieniu do starej przepisac elementy i dodać nowy element co jest zasoborzerne(w javie jakoś tak podobnie działa ArrayList), 
-a w przypadku listy liniowej po prostu sietworzy nowy element, do ostatniego starego daje sie wskaznik na nastepny na ten nowy element ,a w nowym wskaźnik na poprzedni na ostatni stary element, i tak to wygląda.
-Wiec konkluzja jest taka wykorzystanie list liniowych jest bardziej optymalne, niż używanie tablic, ale to tylko w przypadku jeśli z gury wiemy że bedziemy chcieli modyfikować skład elementów na danym zbiorze.
+- jeśli jest to lista jednokierunkowa to ma tylko wskaźnik na nastepny element.
+- jeśli dwukierunkowa to ma wskaźnik na następny i poprzedni element.
+Więc tak podsumowując jeśli np. byśmy chcieli dodawac nowy element do tablicy to trzeba by wykonywać szereg opercji jak zarezerwować pamieć na nową tablice o rozmiarze +1 w odniesieniu do starej przepisać elementy i dodać nowy element co jest zasobożerne(w javie jakoś tak podobnie działa ArrayList), 
+a w przypadku listy liniowej po prostu się tworzy nowy element, wtedy do ostatniego starego elemntu daje sie wskaznik na nastepny na ten nowy element ,a w nowym wskaźnik na poprzedni na ostatni stary element, i tak to wygląda.
+Wiec konkluzja jest taka wykorzystanie list liniowych jest bardziej optymalne, niż używanie tablic, ale to tylko w przypadku jeśli z góry wiemy że bedziemy chcieli modyfikować skład elementów na danym zbiorze.
 
 
 2.
@@ -43,7 +43,7 @@ Napisz program, który wykorzysta API Kanye Rest https://kanye.rest/ by każdora
 Dla chętnych, za dodatkowe punkty: dodaj zapisywanie cytatów w pamięci, by upewnić się, że każdy kolejny cytat jest nowy. 
 
 
-Więc tak zrobiłem aplikacje konsolowo
+Więc tak zrobiłem aplikacje konsolową
 w aplikacji jest 5 komend(w tym główna wymagana "next")
 - next - pobiera cytaty z API Kanye Rest i jeśli cytat się powtórzy to go nie dodaje do listy a tylko komunikuje
 - clean - czyści liste z pobranych cytatów
