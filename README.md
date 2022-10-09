@@ -22,6 +22,7 @@ Więc tak podsumowując jeśli np. byśmy chcieli dodawac nowy element do tablic
 a w przypadku listy liniowej po prostu się tworzy nowy element, wtedy do ostatniego starego elemntu daje sie wskaznik na nastepny na ten nowy element ,a w nowym wskaźnik na poprzedni na ostatni stary element, i tak to wygląda.
 Wiec konkluzja jest taka wykorzystanie list liniowych jest bardziej optymalne, niż używanie tablic, ale to tylko w przypadku jeśli z góry wiemy że bedziemy chcieli modyfikować skład elementów na danym zbiorze.
 
+(Nie wiem czy ta informacja potrzebna ale zadanie 2 i 3 pisałem w IntelliJ)
 
 2.
 Mając tablicę int[] numbers, wypełnioną liczbami całkowitymi i posortowaną malejąco ( numbers[i] > numbers[i+1] ), sprawdź czy występuje w niej liczba int x. Metoda powinna zwracać wartość TRUE, jeśli dana liczba występuje oraz FALSE w przeciwnym wypadku. W rozwiązaniu zależy nam na jak najmniejszej złożoności obliczeniowej (priorytet) oraz pamięciowej. Podaj szacowaną złożoność obliczeniową oraz pamięciową. Poniżej sygnatura metody do napisania.
